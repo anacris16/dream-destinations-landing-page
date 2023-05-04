@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dream Destinations✈️✨</title>
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    h1 {
+      text-align: center;
+      font-weight: 1000px;
+      font-size: 50px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      color: blueviolet;
+      border: 2px solid white;
+      padding: 20px;
+      border-radius: 10px;
+      background-color: #f1f1f1;
+    }
+    hr {
+      border-top: 5px solid whitesmoke;
+      border-bottom: 5px solid whitesmoke;
+      display: block;
+      border-width: 2px;
+    }
+    h2 {
+      text-align: center;
+      font-family: "Courier New", Courier, monospace;
+      font-size: 40px;
+      line-height: 60px;
+      margin: 20px auto;
+    }
+    .vacations {
+      display: block;
+      margin: 0 auto;
+      max-width: 70%;
+      border-radius: 10px;
+    }
+    .grid-container {
+      display: grid;
+      grid-template-rows: auto auto auto;
+      grid-template-columns: auto auto auto;
+      justify-content: center;
+      grid-gap: 10px;
+    }
+
+    .item1 {
+      display: flex;
+      position: relative;
+      align-items: center;
+      justify-content: center;
+      transition: width all 300ms ease-in-out;
+      transition: filter 0.5s ease-in-out;
+    }
+    .item1:hover {
+      transform: scale(1.4);
+      z-index: 999;
+      cursor: pointer;
+    }
+
+    .overlay {
+      position: absolute;
+      bottom: 2px;
+      background: rgba(0, 0, 0, 0.5);
+      color: #f1f1f1;
+      width: 100%;
+      transition: 0.5s ease;
+      opacity: 0;
+      color: white;
+      font-size: 20px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bolder;
+      padding: 20px;
+      text-align: center;
+    }
+    .item1:hover .overlay {
+      opacity: 1;
+    }
+
+    .item2 {
+      display: flex;
+      position: relative;
+      align-items: center;
+      justify-content: center;
+      transition: width all 300ms ease-in-out;
+      transition: filter 0.5s ease-in-out;
+    }
+
+    .item2:hover {
+      transform: scale(1.4);
+      cursor: pointer;
+      z-index: 999;
+    }
+    .overlay2 {
+      position: absolute;
+      bottom: 2px;
+      background: rgba(0, 0, 0, 0.5);
+      color: #f1f1f1;
+      width: 100%;
+      transition: 0.5s ease;
+      opacity: 0;
+      color: white;
+      font-size: 20px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bolder;
+      padding: 20px;
+      text-align: center;
+    }
+    .item2:hover .overlay2 {
+      opacity: 1;
+    }
+
+    .item3 {
+      display: flex;
+      position: relative;
+      align-items: center;
+      justify-content: center;
+      transition: width all 300ms ease-in-out;
+      transition: filter 0.5s ease-in-out;
+    }
+    .item3:hover {
+      transform: scale(1.4);
+      cursor: pointer;
+      z-index: 999;
+    }
+    .overlay3 {
+      position: absolute;
+      bottom: 2px;
+      background: rgba(0, 0, 0, 0.5);
+      color: #f1f1f1;
+      width: 100%;
+      transition: 0.5s ease;
+      opacity: 0;
+      color: white;
+      font-size: 20px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bolder;
+      padding: 20px;
+      text-align: center;
+    }
+    .item3:hover .overlay3 {
+      opacity: 1;
+    }
+
+    .item4 {
+      display: flex;
+      position: relative;
+      align-items: center;
+      justify-content: center;
+      transition: width all 300ms ease-in-out;
+      transition: filter 0.5s ease-in-out;
+    }
+    .item4:hover:hover {
+      transform: scale(1.4);
+      cursor: pointer;
+      z-index: 999;
+    }
+    .overlay4 {
+      position: absolute;
+      bottom: 2px;
+      background: rgba(0, 0, 0, 0.5);
+      color: #f1f1f1;
+      width: 100%;
+      transition: 0.5s ease;
+      opacity: 0;
+      color: white;
+      font-size: 20px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bolder;
+      padding: 20px;
+      text-align: center;
+    }
+    .item4:hover .overlay4 {
+      opacity: 1;
+    }
+    .item5 {
+      display: flex;
+      position: relative;
+      align-items: center;
+      justify-content: center;
+      transition: width all 300ms ease-in-out;
+      transition: filter 0.5s ease-in-out;
+    }
+    .item5:hover {
+      transform: scale(1.4);
+      cursor: pointer;
+      z-index: 999;
+    }
+    .overlay5 {
+      position: absolute;
+      bottom: 2px;
+      background: rgba(0, 0, 0, 0.5);
+      color: #f1f1f1;
+      width: 100%;
+      transition: 0.5s ease;
+      opacity: 0;
+      color: white;
+      font-size: 20px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bolder;
+      padding: 20px;
+      text-align: center;
+    }
+    .item5:hover .overlay5 {
+      opacity: 1;
+    }
+    .item6 {
+      display: flex;
+      position: relative;
+      align-items: center;
+      justify-content: center;
+      transition: width all 300ms ease-in-out;
+      transition: filter 0.5s ease-in-out;
+    }
+    .item6:hover {
+      transform: scale(1.4);
+      cursor: pointer;
+      z-index: 999;
+    }
+    .overlay6 {
+      position: absolute;
+      bottom: 2px;
+      background: rgba(0, 0, 0, 0.5);
+      color: #f1f1f1;
+      width: 100%;
+      transition: 0.5s ease;
+      opacity: 0;
+      color: white;
+      font-size: 20px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bolder;
+      padding: 20px;
+      text-align: center;
+    }
+    .item6:hover .overlay6 {
+      opacity: 1;
+    }
+    body {
+      background: linear-gradient(
+        109.6deg,
+        rgba(119, 44, 232, 0.68) 11.5%,
+        rgb(119, 44, 232) 91.2%
+      );
+      display: block;
+      margin: 8px;
+    }
+    .container {
+      display: block;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      color: white;
+      max-width: 1000px;
+      background: #7dace4;
+      padding: 80px;
+      border-radius: 10px;
+      margin: 20px auto;
+    }
+    a {
+      color: blueviolet;
+      text-align: center;
+    }
+    .destinations {
+      text-align: center;
+      font-size: 30px;
+      padding-bottom: 30px;
+      margin-top: 50px;
+    }
+    .about {
+      text-align: center;
+      font-size: 30px;
+      margin-top: 50px;
+    }
+    .description {
+      text-align: center;
+      font-size: 20px;
+      line-height: 40px;
+      border: 2px solid white;
+      padding: 20px;
+      border-radius: 10px;
+      background-color: #f1f1f1;
+      color: black;
+    }
+    .aboutLink {
+      text-align: center;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    h4 {
+      text-align: center;
+      font-size: 35px;
+    }
+    button {
+      border: 1px solid rgb(154, 70, 233);
+      border-radius: 30px;
+      box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+      margin: 0 auto;
+      display: block;
+      padding: 15px 20px;
+      font-size: 30px;
+      color: white;
+      background: rgb(154, 70, 233);
+      transition: all 200ms ease-in-out;
+    }
+    button:hover {
+      background: white;
+      color: rgb(154, 70, 233);
+      cursor: pointer;
+    }
+    .coder {
+      text-align: center;
+      font-size: 20px;
+      font-family: monospace;
+      color: whitesmoke;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <h1>✈️ Dream Destinations ✈️</h1>
+      <br />
+      <h2>
+        <hr />
+        We take you to the places
+        <span><em>where your dreams come true!✨</em></span>
+        <hr />
+        <br />
+      </h2>
+      <img
+        class="vacations"
+        src="https://www.schengenvisainfo.com/news/wp-content/uploads/2022/06/Time-to-Travel-beach-tourism-summer.jpg"
+        alt="travel"
+      />
+
+      <h3>
+        <div class="about"><strong>About us 😎</strong></div>
+      </h3>
+      <div class="description">
+        <p>
+          Dream Destinations is an online travel agency that specializes in
+          providing travelers with a variety of options for their dream
+          vacation. With a user-friendly website, customers can easily search
+          and book flights, hotels, rental cars, and activities for their
+          desired destination. Dream Destinations offers competitive prices and
+          personalized recommendations based on customers' preferences, making
+          the travel booking process stress-free and enjoyable. Additionally,
+          their customer service team is available 24/7 to assist with any
+          questions or concerns that may arise during the trip planning process.
+          Whether you're looking for a romantic getaway or an adventurous trip,
+          Dream Destinations has everything you need to make your dream vacation
+          a reality.
+        </p>
+        <div class="aboutLink">
+          <a href="https://dreamdestination.my.canva.site/" target="blank"
+            >Learn more</a
+          >
+        </div>
+      </div>
+      <h3>
+        <div class="destinations"><strong>Our Top Destinations</strong> 🔥</div>
+      </h3>
+      <div class="grid-container">
+        <div class="item1">
+          <a href="https://en.wikivoyage.org/wiki/Rome" target="blank">
+            <img
+              src="https://rometips.nl/images/colosseum_rome.jpg"
+              alt="rome"
+              style="width: 100%"
+          /></a>
+          <div class="overlay">Rome 🇮🇹</div>
+        </div>
+        <div class="item2">
+          <a href="https://en.wikivoyage.org/wiki/Amsterdam" target="blank">
+            <img
+              src="https://img.traveltriangle.com/blog/wp-content/uploads/2018/06/amsterdam-evening-canal-cruise.jpg"
+              alt="amsterdam"
+              style="width: 100%"
+          /></a>
+          <div class="overlay2">Amsterdam 🇳🇱</div>
+        </div>
+        <div class="item3">
+          <a
+            href="https://colombia.travel/en/cartagena-de-indias#:~:text=Cartagena%20is%20a%20city%20that,capital%20of%20the%20Bol%C3%ADvar%20region."
+            target="blank"
+            ><img
+              src="https://cdn.forbes.com.mx/2014/09/Travelocity-Cartagena-Destacada.Galeria-1024x680.jpg"
+              alt="cartagena"
+              style="width: 100%"
+          /></a>
+          <div class="overlay3">Cartagena 🇨🇴</div>
+        </div>
+        <div class="item4">
+          <a href="https://en.wikivoyage.org/wiki/Alaska" target="blank"
+            ><img
+              src="https://visitusa.nl/wp-content/uploads/2020/07/photos_anchorage_ak_Anchorage_Northern_Lights_Viewing1_JodyO.Photo_.jpg"
+              alt="alaska"
+              style="width: 100%"
+          /></a>
+          <div class="overlay4">Alaska 🇺🇸</div>
+        </div>
+        <div class="item5">
+          <a href="https://en.wikivoyage.org/wiki/Paris" target="blank">
+            <img
+              src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1746&q=80"
+              alt="paris"
+              style="width: 100%"
+          /></a>
+          <div class="overlay5">Paris 🇫🇷</div>
+        </div>
+        <div class="item6">
+          <a href="https://en.wikivoyage.org/wiki/Mayan_Riviera" target="blank">
+            <img
+              src="https://www.bemytravelmuse.com/wp-content/uploads/2020/08/cancun-things-to-do-9.jpg"
+              alt="mayan"
+              style="width: 100%"
+          /></a>
+          <div class="overlay6">Mayan Riviera 🇲🇽</div>
+        </div>
+      </div>
+      <h4>Your dream destination awaits!🏖</h4>
+      <button>Book Now 📥</button>
+    </div>
+    <div class="coder"><p>Coded by Ana Cristina Altuve💜</p></div>
+    <script>
+      function bookNow() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email address");
+        let vacation = prompt("Which city do you dream to go?");
+        let message =
+          "Thank you " +
+          name +
+          ", we'll be in touch with you soon. In the meantime, check the awesome information we sent you about ";
+        vacation = vacation.toLowerCase().trim();
+        if (vacation === "rome") {
+          alert(message + "Rome! 🇮🇹");
+        } else if (vacation === "amsterdam") {
+          alert(message + "Amsterdam! 🇳🇱");
+        } else if (vacation === "cartagena") {
+          alert(message + "Cartagena! 🇨🇴");
+        } else if (vacation === "alaska") {
+          alert(message + "Alaska! 🇺🇸");
+        } else if (vacation === "paris") {
+          alert(message + "Paris! 🇫🇷");
+        } else if (vacation === "mayan riviera") {
+          alert(message + "Mayan Riviera! 🇲🇽");
+        } else {
+          alert(
+            name +
+              ", we are so sorry ☹️ but at the moment we don't have offers for that city 🙈 We'll keep you updated by email! 📧"
+          );
+        }
+      }
+      let bookButton = document.querySelector("button");
+      bookButton.addEventListener("click", bookNow);
+    </script>
+  </body>
+</html>
